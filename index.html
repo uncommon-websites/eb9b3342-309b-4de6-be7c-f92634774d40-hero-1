@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrad | Contextual Ads for AI Apps</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Ensure text rendering is crisp */
+        h1 {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+<body class="bg-black text-white h-screen w-full overflow-hidden relative">
+
+    <!-- Background Image Container -->
+    <div class="absolute inset-0 z-0">
+        <!-- Placeholder image simulating the dark city night aerial view -->
+        <img src="https://imolwncbqxugevwmleed.supabase.co/storage/v1/object/public/public-assets/hero-images/eb9b3342-309b-4de6-be7c-f92634774d40/hero-1-img-0-1769790322924.png" 
+             alt="City Night Background" 
+             class="w-full h-full object-cover opacity-60">
+        
+        <!-- Gradient Overlay to match the dark aesthetic and ensure text readability -->
+        <div class="absolute inset-0 bg-gradient-to-b from-black/90 via-black/30 to-black/50"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="absolute top-0 left-0 w-full z-20 flex justify-between items-center px-6 py-6 md:px-10 md:py-8">
+        <!-- Logo -->
+        <a href="#" class="block w-12 h-8 md:w-14 md:h-9 hover:opacity-80 transition-opacity">
+            <svg viewBox="0 0 42 26" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+                <!-- Canton (Top Left Box) -->
+                <rect x="0" y="0" width="18" height="12" fill="white"/>
+                <!-- Star inside Canton -->
+                <path d="M9 3L10.5 6H14L11.2 8L12.2 11L9 9L5.8 11L6.8 8L4 6H7.5L9 3Z" fill="black"/>
+                
+                <!-- Top Stripes (Right of Canton) -->
+                <rect x="21" y="0" width="21" height="4" fill="white"/>
+                <rect x="21" y="8" width="21" height="4" fill="white"/>
+                
+                <!-- Bottom Stripes (Full Width) -->
+                <rect x="0" y="15" width="42" height="4" fill="white"/>
+                <rect x="0" y="22" width="42" height="4" fill="white"/>
+            </svg>
+        </a>
+
+        <!-- Nav Links -->
+        <nav class="flex items-center gap-6 md:gap-10 text-sm md:text-base font-medium tracking-wide">
+            <a href="#" class="text-white hover:text-gray-300 transition-colors">Follow us on X</a>
+            <a href="#" class="text-white hover:text-gray-300 transition-colors">Integrate Thrad</a>
+        </nav>
+    </header>
+
+    <!-- Hero Content -->
+    <main class="relative z-10 h-full flex flex-col justify-end pb-16 px-6 md:px-10 md:pb-24 lg:pb-28">
+        <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[7.5rem] leading-[0.95] md:leading-[0.9] tracking-tighter font-normal text-white max-w-[95vw]">
+            <span class="block">Monetize the</span>
+            <span class="block">AI Ecosystem.</span>
+        </h1>
+    </main>
+
+</body>
+</html>
